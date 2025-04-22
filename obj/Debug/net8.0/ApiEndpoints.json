@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "Server.Controllers.UserController",
+    "Method": "Detail",
+    "RelativePath": "api/User/Details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.UserController",
+    "Method": "Register",
+    "RelativePath": "api/User/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commond",
+        "Type": "Server.CQRS.User.Commond.CreateUserCommond",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
