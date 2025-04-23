@@ -1,4 +1,4 @@
-﻿namespace Server.Interface
+﻿namespace Server.Application.Interface
 {
     public interface ICloudinaryInterface
     {

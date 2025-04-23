@@ -17,9 +17,6 @@ namespace Server.CQRS.User.Query
 
         public async Task<UserDto> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
         {
-
-
-
             var user = await _dbService.Users
      .Find(u => u.UserId == request.UserId)  // Now this looks for the separate UserId field
      .FirstOrDefaultAsync(cancellationToken);
@@ -27,13 +24,11 @@ namespace Server.CQRS.User.Query
             {
                 throw new ("User Not found");
             }
-
             return new UserDto
             {
                 UserId = user.UserId,
                 Name = user.Name,
                 Email = user.Email,
-              
             };
         }
 

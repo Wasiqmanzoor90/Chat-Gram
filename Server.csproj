@@ -19,8 +19,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CQRS\Comment\" />
-    <Folder Include="CQRS\Post\" />
+    <Folder Include="Application\Behaviour\" />
+    <Folder Include="CQRS\Comment\Commond\" />
+    <Folder Include="CQRS\Comment\Dtos\" />
+    <Folder Include="CQRS\Comment\Query\" />
+    <Folder Include="CQRS\Post\Commond\" />
+    <Folder Include="CQRS\Post\Dtos\" />
+    <Folder Include="CQRS\Post\Query\" />
   </ItemGroup>
 
 </Project>

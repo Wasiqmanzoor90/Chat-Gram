@@ -59,3 +59,4 @@ C:\Users\admin\source\repos\Dotnet projects\Instagram Clone\Server\obj\Debug\net
 C:\Users\admin\source\repos\Dotnet projects\Instagram Clone\Server\obj\Debug\net8.0\Server.pdb
 C:\Users\admin\source\repos\Dotnet projects\Instagram Clone\Server\obj\Debug\net8.0\Server.genruntimeconfig.cache
 C:\Users\admin\source\repos\Dotnet projects\Instagram Clone\Server\obj\Debug\net8.0\ref\Server.dll
+C:\Users\admin\source\repos\Dotnet projects\Instagram Clone\Server\obj\Debug\net8.0\Server.sourcelink.json
