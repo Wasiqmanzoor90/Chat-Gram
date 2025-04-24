@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
 
-namespace Server.CQRS.User.Commond
+namespace Server.CQRS.User.Register.Commond
 {
-    public class CreateUserValidation:AbstractValidator<CreateUserCommond>
+    public class CreateUserValidation : AbstractValidator<CreateUserCommond>
     {
-        public CreateUserValidation() 
+        public CreateUserValidation()
         {
 
             RuleFor(x => x.Name).NotEmpty()

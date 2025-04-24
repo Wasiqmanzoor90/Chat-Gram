@@ -2,6 +2,7 @@
 {
     public interface ICloudinaryInterface
     {
-        Task<string> UploadImageAsync();
+        Task<string> UploadImageAsync(IFormFile file);
+        Task<string> UploadVideoAsync(IFormFile file);
     }
 }

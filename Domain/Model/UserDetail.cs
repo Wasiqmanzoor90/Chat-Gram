@@ -7,12 +7,8 @@
         public class UserDetail
         {
 
-        [BsonId]
-        [BsonElement("_id")]
-        public ObjectId Id { get; set; }  // This maps to _id
-
-        [BsonElement("UserId")]
-        public ObjectId UserId { get; set; }  // This maps to UserId
+       
+        public ObjectId Id { get; set; }  // This maps to UserId
 
         public required string Name { get; set; }
             [EmailAddress]

@@ -1,6 +1,47 @@
 [
   {
     "ContainingType": "Server.Controllers.UserController",
+    "Method": "CreatePost",
+    "RelativePath": "api/User/CreatePost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PostPic",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PostVideo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Caption",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Tags",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Visibility",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.UserController",
     "Method": "Detail",
     "RelativePath": "api/User/Details",
     "HttpMethod": "GET",
@@ -17,6 +58,22 @@
   },
   {
     "ContainingType": "Server.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "Server.CQRS.User.Login.Commond.CreateLoginCommond",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.UserController",
     "Method": "Register",
     "RelativePath": "api/User/Register",
     "HttpMethod": "POST",
@@ -25,7 +82,7 @@
     "Parameters": [
       {
         "Name": "commond",
-        "Type": "Server.CQRS.User.Commond.CreateUserCommond",
+        "Type": "Server.CQRS.User.Register.Commond.CreateUserCommond",
         "IsRequired": true
       }
     ],

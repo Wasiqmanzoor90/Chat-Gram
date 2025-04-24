@@ -3,9 +3,9 @@ using Server.Types;
 
 namespace Server.Domain.Model
 {
-    public class Post
+    public class PostDetails
     {
-        public ObjectId PostId { get; set; }
+        public ObjectId Id { get; set; }
         public string? PostPic {  get; set; }
         public string? PostVideo {  get; set; }
         public string? Caption {  get; set; }

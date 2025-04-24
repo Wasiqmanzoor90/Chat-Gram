@@ -23,8 +23,6 @@
     <Folder Include="CQRS\Comment\Commond\" />
     <Folder Include="CQRS\Comment\Dtos\" />
     <Folder Include="CQRS\Comment\Query\" />
-    <Folder Include="CQRS\Post\Commond\" />
-    <Folder Include="CQRS\Post\Dtos\" />
     <Folder Include="CQRS\Post\Query\" />
   </ItemGroup>
 

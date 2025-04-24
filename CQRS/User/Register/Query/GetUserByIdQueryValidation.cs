@@ -1,12 +1,12 @@
 ﻿using FluentValidation;
 
-namespace Server.CQRS.User.Query
+namespace Server.CQRS.User.Register.Query
 {
     public class GetUserByIdQueryValidation : AbstractValidator<GetUserByIdQuery>
     {
         public GetUserByIdQueryValidation()
         {
-            RuleFor(u => u.UserId)
+            RuleFor(u => u.Id)
                 .NotEmpty().WithMessage("UserId must not be empty.");
         }
     }

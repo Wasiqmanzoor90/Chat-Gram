@@ -1,10 +1,10 @@
 ﻿using MediatR;
 using MongoDB.Bson;
 using MongoDB.Driver;
-using Server.CQRS.User.Dtos;
+using Server.CQRS.User.Register.Dtos;
 using Server.Data;
 
-namespace Server.CQRS.User.Query
+namespace Server.CQRS.User.Register.Query
 {
     public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, UserDto>
     {
@@ -18,15 +18,15 @@ namespace Server.CQRS.User.Query
         public async Task<UserDto> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
         {
             var user = await _dbService.Users
-     .Find(u => u.UserId == request.UserId)  // Now this looks for the separate UserId field
-     .FirstOrDefaultAsync(cancellationToken);
+                  .Find(u => u.Id == request.Id)
+                  .FirstOrDefaultAsync(cancellationToken);
             if (user == null)
             {
-                throw new ("User Not found");
+                throw new("User Not found");
             }
             return new UserDto
             {
-                UserId = user.UserId,
+                Id = user.Id,
                 Name = user.Name,
                 Email = user.Email,
             };

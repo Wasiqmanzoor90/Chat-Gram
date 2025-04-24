@@ -4,7 +4,7 @@ namespace Server.Domain.Model
 {
     public class Comment
     {
-        public ObjectId CommentId { get; set; }
+        public ObjectId Id { get; set; }
         public ObjectId PostId { get; set; }  //Relation with Post
         public ObjectId UserId { get; set; }  //Relation with User
         public string? Content { get; set; }

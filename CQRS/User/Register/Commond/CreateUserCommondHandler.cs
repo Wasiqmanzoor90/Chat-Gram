@@ -4,20 +4,20 @@ using MongoDB.Bson;
 using MongoDB.Driver;
 using Server.Data;
 
-namespace Server.CQRS.User.Commond
+namespace Server.CQRS.User.Register.Commond
 {
     public class CreateUserCommondHandler : IRequestHandler<CreateUserCommond, ObjectId>
     {
         private readonly MongoDbService _dbService;
         public CreateUserCommondHandler(MongoDbService dbService)
-            {
+        {
             _dbService = dbService;
-            }
+        }
 
 
         public async Task<ObjectId> Handle(CreateUserCommond request, CancellationToken cancellationToken)
         {
-          var finduser = await _dbService.Users.Find(u=> u.Email == request.Email).FirstOrDefaultAsync();
+            var finduser = await _dbService.Users.Find(u => u.Email == request.Email).FirstOrDefaultAsync();
             if (finduser != null)
             {
                 throw new Exception("Email already exists.");
@@ -27,7 +27,7 @@ namespace Server.CQRS.User.Commond
 
             var user = new Domain.Model.UserDetail
             {
-                UserId = ObjectId.GenerateNewId(),
+                Id = ObjectId.GenerateNewId(),
                 Name = request.Name,
                 Email = request.Email,
                 Password = hash,
@@ -39,8 +39,8 @@ namespace Server.CQRS.User.Commond
 
             await _dbService.Users.InsertOneAsync(user, cancellationToken: cancellationToken);
 
-            return user.UserId;
+            return user.Id;
         }
     }
-    }
+}
 
