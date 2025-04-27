@@ -6,7 +6,7 @@ using Server.Data;
 
 namespace Server.CQRS.User.Register.Query
 {
-    public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, UserDto>
+    public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, PostDto>
     {
         private readonly MongoDbService _dbService;
 
@@ -15,7 +15,7 @@ namespace Server.CQRS.User.Register.Query
             _dbService = dbService;
         }
 
-        public async Task<UserDto> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
+        public async Task<PostDto> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
         {
             var user = await _dbService.Users
                   .Find(u => u.Id == request.Id)
@@ -24,7 +24,7 @@ namespace Server.CQRS.User.Register.Query
             {
                 throw new("User Not found");
             }
-            return new UserDto
+            return new PostDto
             {
                 Id = user.Id,
                 Name = user.Name,

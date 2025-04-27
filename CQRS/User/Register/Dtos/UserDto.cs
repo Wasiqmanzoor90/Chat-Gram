@@ -2,7 +2,7 @@
 
 namespace Server.CQRS.User.Register.Dtos
 {
-    public class UserDto
+    public class PostDto
     {
         public ObjectId Id { get; set; }
         public string Name { get; set; } = string.Empty;

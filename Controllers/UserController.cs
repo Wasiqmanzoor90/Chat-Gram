@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using Server.CQRS.Post.Commond;
 using Server.CQRS.Post.Dtos;
+using Server.CQRS.Post.Query;
 using Server.CQRS.User.Login.Commond;
 using Server.CQRS.User.Register.Commond;
 using Server.CQRS.User.Register.Query;
@@ -37,8 +38,20 @@ namespace Server.Controllers
         }
 
 
+        [Authorize]
+        [HttpGet("GetPostsByUser")]
+        public async Task<IActionResult> GetPostsByUser([FromQuery] string userId)
+        {
+            var objectId = new ObjectId(userId);
+            var result = await _mediator.Send(new GetPostsIdQuery(objectId));
+            return Ok(result);
+        }
+        
+
+
+
         [HttpPost("CreatePost")]
-        public async Task<IActionResult> CreatePost([FromForm] PostDto dto)
+        public async Task<IActionResult> CreatePost([FromForm] CreatePostDto dto)
         {
             var result = await _mediator.Send(new CreatePostCommand(dto));
             return Ok(new { PostId = result });

@@ -67,6 +67,27 @@
         }
       }
     },
+    "/api/User/GetPostsByUser": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/User/CreatePost": {
       "post": {
         "tags": [

@@ -58,6 +58,22 @@
   },
   {
     "ContainingType": "Server.Controllers.UserController",
+    "Method": "GetPostsByUser",
+    "RelativePath": "api/User/GetPostsByUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.UserController",
     "Method": "Login",
     "RelativePath": "api/User/Login",
     "HttpMethod": "POST",

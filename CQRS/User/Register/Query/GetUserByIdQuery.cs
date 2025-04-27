@@ -4,6 +4,6 @@ using Server.CQRS.User.Register.Dtos;
 
 namespace Server.CQRS.User.Register.Query
 {
-    public record GetUserByIdQuery(ObjectId Id) : IRequest<UserDto>;
+    public record GetUserByIdQuery(ObjectId Id) : IRequest<PostDto>;
 
 }
