@@ -18,7 +18,7 @@ namespace Server.Data
 
         public IMongoCollection<UserDetail> Users => _database.GetCollection<UserDetail>("Users");
         public IMongoCollection<PostDetails> Posts => _database.GetCollection<PostDetails>("Posts");
-        public IMongoCollection<Comment> Comments => _database.GetCollection<Comment>("Commnets");
+        public IMongoCollection<CommentDetails> Comments => _database.GetCollection<CommentDetails>("Commnets");
     }
     
 }

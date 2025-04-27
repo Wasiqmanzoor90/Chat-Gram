@@ -48,10 +48,15 @@ namespace Server.CQRS.Post.Commond
                 PostPic = imageUrl,
                 PostVideo = videoUrl,
                 Caption = request.Dto.Caption,
+
+                Comments = new List<CommentDetails>(), // Important to initialize
+                Reaction = new Dictionary<string, int>(), // Initialize empty
+
                 Tags = request.Dto.Tags ?? new List<string>(),
                 Visibility = request.Dto.Visibility,
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
+                 
             };
 
             await _posts.InsertOneAsync(post);

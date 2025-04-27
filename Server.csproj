@@ -20,8 +20,6 @@
 
   <ItemGroup>
     <Folder Include="Application\Behaviour\" />
-    <Folder Include="CQRS\Comment\Commond\" />
-    <Folder Include="CQRS\Comment\Dtos\" />
     <Folder Include="CQRS\Comment\Query\" />
   </ItemGroup>
 

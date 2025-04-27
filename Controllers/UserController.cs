@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
+using Server.CQRS.Comment.Commond;
+using Server.CQRS.Comment.Dtos;
 using Server.CQRS.Post.Commond;
 using Server.CQRS.Post.Dtos;
 using Server.CQRS.Post.Query;
@@ -48,8 +50,6 @@ namespace Server.Controllers
         }
         
 
-
-
         [HttpPost("CreatePost")]
         public async Task<IActionResult> CreatePost([FromForm] CreatePostDto dto)
         {
@@ -57,7 +57,15 @@ namespace Server.Controllers
             return Ok(new { PostId = result });
         }
 
+        [Authorize]
+        [HttpPost("CreateComment")]
+        public async Task<IActionResult> CreateComment([FromBody] CreateCommentDto dto)
+        {
+            var result = await _mediator.Send(new CreateCommentCommond(dto));
+            return Ok(new { CommentId = result });
+        }
 
+        [Authorize]
         [HttpGet("Details")]
         public async Task<IActionResult> Detail([FromQuery] string userId)
         {

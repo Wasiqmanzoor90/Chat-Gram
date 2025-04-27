@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "Server.Controllers.UserController",
+    "Method": "CreateComment",
+    "RelativePath": "api/User/CreateComment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Server.CQRS.Comment.Dtos.CreateCommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.UserController",
     "Method": "CreatePost",
     "RelativePath": "api/User/CreatePost",
     "HttpMethod": "POST",

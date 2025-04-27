@@ -10,7 +10,7 @@ namespace Server.Domain.Model
         public string? PostVideo {  get; set; }
         public string? Caption {  get; set; }
         public ObjectId UserId { get; set; }  //Relation with User
-        public List<Comment> Comments { get; set; } = [];
+        public List<CommentDetails> Comments { get; set; } = [];
         public List<string> Tags { get; set; } = [];
         public Visibility Visibility { get; set; } = Visibility.Public;
         public Dictionary<string, int> Reaction { get; set; } = [];
