@@ -4,6 +4,7 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import Home from './Pages/Home'; // Example page
 import { DashboardLayout } from './Layout/DashboardLayout'; // Layout
+import Footerdown from './Pages/Footerdown';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/home" element={<Home />} />
                 </Route>
             </Routes>
+            <Footerdown/>
         </BrowserRouter>
     );
 }
