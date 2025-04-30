@@ -13,6 +13,9 @@ try {
     const res = await  axios.post('https://localhost:7023/api/User/Login', form)
     if (res.status === 200) {
         console.log(res.data);
+        localStorage.setItem('token', res.data.token);
+        localStorage.setItem('userId', res.data.userId);
+        localStorage.setItem('name', res.data.name);
         alert('Login successful');
         window.location.href = '/home';
     } else {
@@ -30,6 +33,7 @@ const signin=async (e, form)=>{
         const res = await axios.post('https://localhost:7023/api/User/Register', form)
         if (res.status === 200) {
             console.log(res.data);
+        
             alert('Login successful');
             // Redirect to the desired page
             window.location.href = '/home';
