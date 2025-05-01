@@ -20,7 +20,7 @@ function Login() {
     const { handleRegister } = React.useContext(context);
 
     return (
-        <div className="d-flex justify-content-center align-items-center " style={{ border: '1px solid black', minHeight: '100vh' }}>
+        <div className="d-flex justify-content-center align-items-center " style={{minHeight: '100vh' }}>
             <div className='me-5'>
                 <img src={screenshot} alt="Login" style={{ width: '600px' }} />
             </div>
