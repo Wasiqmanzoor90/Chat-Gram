@@ -55,6 +55,7 @@ const Store = () => {
             });
     
             if (res.status === 200) {
+              console.log(res.data);
                 setPosts(res.data);
             }
         } catch (error) {

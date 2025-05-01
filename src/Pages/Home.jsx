@@ -11,19 +11,23 @@ function Home() {
         <p>No posts found.</p>
       ) : (
         posts.map((post, index) => (
-          <div key={index} style={{ border: '1px solid #ccc', padding: '10px', marginBottom: '10px' }}>
+          <div className='d-block justify-content-center pb-5' key={index} style={{ borderBottom:'1px solid lightgrey', padding: '10px', marginBottom: '20px' }}>
+            <h4>Posted by: {post.name}</h4>
+            <br />
             {post.postPicUrl && (
-              <img
-                src={post.postPicUrl}
-                alt="Post"
-                style={{ width: '100%', maxHeight: '300px', objectFit: 'cover' }}
-              />
+              <div className='mb-3' style={{ display: 'flex', justifyContent: 'center' }}>
+                <img
+                  src={post.postPicUrl}
+                  alt="Post"
+                  style={{ width: '700px', maxHeight: '400px', objectFit: 'cover' }}
+                />
+              </div>
             )}
             <h3>{post.caption}</h3>
             <p>Tags: {post.tags.join(', ')}</p>
-            <small>Posted by: {post.userId}</small><br />
-            <small>Created: {new Date(post.createdAt).toLocaleString()}</small>
+            <small >Created: {new Date(post.createdAt).toLocaleString()}</small>
           </div>
+
         ))
       )}
     </div>

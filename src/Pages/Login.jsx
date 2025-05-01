@@ -20,7 +20,7 @@ function Login() {
     const { handleRegister } = React.useContext(context);
 
     return (
-        <div className="d-flex justify-content-center align-items-center " style={{minHeight: '100vh' }}>
+        <div className="d-flex justify-content-center align-items-center " style={{ minHeight: '100vh' }}>
             <div className='me-5'>
                 <img src={screenshot} alt="Login" style={{ width: '600px' }} />
             </div>
@@ -85,9 +85,9 @@ function Login() {
                                 <div className='mt-5 text-center'>
                                     <p>
                                         Don't you have an account?
-                                    
 
-                                        <Link  style={{ textDecoration: 'none', color: '#007BFF', fontWeight: 'bold' }} to='/Register'>Sign up</Link>
+
+                                        <Link style={{ textDecoration: 'none', color: '#007BFF', fontWeight: 'bold' }} to='/Register'>Sign up</Link>
                                     </p>
                                 </div>
                             </div>
