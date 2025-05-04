@@ -6,6 +6,7 @@ export const context = createContext();
 
 const Store = () => {
     const [posts, setPosts] = useState([]);
+    const [comment, setComment]=useState([]);
 
     const handleRegister = async (e, form) => {
         e.preventDefault();
@@ -47,15 +48,15 @@ const Store = () => {
     const GetPost = async () => {
         try {
             const token = localStorage.getItem('token'); // get the saved token
-    
+
             const res = await axios.get('https://localhost:7023/api/User/GetPostsByUser', {
                 headers: {
                     Authorization: `Bearer ${token}` // send the token
                 }
             });
-    
+
             if (res.status === 200) {
-              console.log(res.data);
+                console.log(res.data);
                 setPosts(res.data);
             }
         } catch (error) {
@@ -67,14 +68,43 @@ const Store = () => {
             }
         }
     };
-    
+
     //  Fetch posts on component mount
     useEffect(() => {
         GetPost();
     }, []);
 
+
+
+    const GetComment = async () => {
+        const token = localStorage.getItem('token');
+        try {
+            const res = await axios.get('https://localhost:7023/api/User/GetComment', {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+            console.log(res); // Log the full response to see what you're getting
+            if (res.status === 200) {
+                console.log('Comments:', res.data);
+                setComment(res.data);
+            }
+        } catch (error) {
+            console.log('Error fetching comments:', error.response ? error.response.data : error.message);
+            if (error.response?.status === 401) {
+                alert('Unauthorized. Please log in again.');
+                localStorage.clear();
+                window.location.href = '/login';
+            }
+        }
+    };
+    
+    useEffect(() => {
+        console.log("Fetching comments...");
+        GetComment();
+    }, []);
     return (
-        <context.Provider value={{ handleRegister, signin, posts, GetPost }}>
+        <context.Provider value={{ handleRegister, signin, posts, GetPost, comment, GetComment }}>
             <App />
         </context.Provider>
     );

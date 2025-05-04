@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import { DashboardLayout } from './Layout/DashboardLayout';
 import Footerdown from './Pages/Footerdown';
 import PrivateRoute from './Utils/PrivateRoute';
+import Comment from './Pages/Comment';
 
 function App() {
     return (
@@ -19,7 +20,11 @@ function App() {
                     <Route element={<DashboardLayout />}>
                         <Route path="/home" element={<Home />} />
                     </Route>
+                    <Route path="/comment" element={<Comment />} />
                 </Route>
+
+
+
             </Routes>
             <Footerdown />
         </BrowserRouter>
