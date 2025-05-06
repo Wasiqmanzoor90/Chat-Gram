@@ -15,7 +15,7 @@ const Store = () => {
             if (res.status === 200) {
                 console.log(res.data);
                 localStorage.setItem('token', res.data.token);
-                localStorage.setItem('userId', res.data.userId);
+                localStorage.setItem('userId', res.data.id);
                 localStorage.setItem('name', res.data.name);
                 alert('Login successful');
                 window.location.href = '/home';
@@ -76,54 +76,43 @@ const Store = () => {
 
 
 
-    const GetComment = async () => {
-        const cachedComments = localStorage.getItem('cachedComments');
-        if (cachedComments) {
-            setComment(JSON.parse(cachedComments));
-            return; // use cached data, skip API
-        }
-
+    const GetComment = async (postId) => {
+        console.log(`Fetching comments for postId: ${postId}`); // Add logging to verify the postId
         const token = localStorage.getItem('token');
         try {
-            const res = await axios.get('https://localhost:7023/api/User/GetComment', {
-                headers: {
-                    Authorization: `Bearer ${token}`
-                }
-            });
-
-            if (res.status === 200) {
-                console.log('Comments:', res.data);
-                setComment(res.data);
-                localStorage.setItem('cachedComments', JSON.stringify(res.data)); // cache for later
+          const res = await axios.get(`https://localhost:7023/api/User/GetComment/${postId}`, {
+            headers: {
+              Authorization: `Bearer ${token}`
             }
+          });
+          console.log(res.data); // Check what data is returned from the API
+          if (res.status === 200) {
+            setComment(res.data);
+          }
         } catch (error) {
-            console.log('Error fetching comments:', error.response ? error.response.data : error.message);
-            if (error.response?.status === 401) {
-                alert('Unauthorized. Please log in again.');
-                localStorage.clear();
-                window.location.href = '/login';
-            }
+          console.log('Error fetching comments:', error.response ? error.response.data : error.message);
+          if (error.response?.status === 401) {
+            alert('Unauthorized. Please log in again.');
+            localStorage.clear();
+            window.location.href = '/login';
+          }
         }
-    };
-
-    useEffect(() => {
-        console.log("Fetching comments...");
-        GetComment();
-    }, []);
+      };
+      
 
     const CreateCommment = async (PostId, content) => {
-const token = localStorage.getItem('token');
-const UserId = localStorage.getItem('userId')
-const Name = localStorage.getItem('name')
+        const token = localStorage.getItem('token');
+        const UserId = localStorage.getItem('userId')
+        const Name = localStorage.getItem('name')
 
 
-const CommmentData={
-UserId,
-PostId,
-Name,
-  Content: content,     // ✅ match C# property name
-  Created: new Date().toISOString()  // ✅ match C# property name
-}
+        const CommmentData = {
+            UserId,
+            PostId,
+            Name,
+            Content: content,    
+            Created: new Date().toISOString() 
+        }
         try {
 
             const res = await axios.post('https://localhost:7023/api/User/CreateComment',
@@ -135,13 +124,11 @@ Name,
                     }
                 }
             );
-            if(res.status ===200)
-            {
+            if (res.status === 200) {
                 localStorage.removeItem('cachedComments'); // clear cache if using it
                 await GetComment(); // refresh UI
             }
-            else
-            {
+            else {
                 alert('Failed to create comment');
             }
 
@@ -154,7 +141,7 @@ Name,
 
 
     return (
-        <context.Provider value={{ handleRegister, signin, posts, GetPost, comment, GetComment, CreateCommment}}>
+        <context.Provider value={{ handleRegister, signin, posts, GetPost, comment, GetComment, CreateCommment }}>
             <App />
         </context.Provider>
     );

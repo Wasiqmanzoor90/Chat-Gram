@@ -17,13 +17,12 @@ function App() {
 
                 {/* Protected routes */}
                 <Route element={<PrivateRoute />}>
+                    {/* The DashboardLayout will be used for all routes that need authentication */}
                     <Route element={<DashboardLayout />}>
                         <Route path="/home" element={<Home />} />
+                        <Route path="/comment/:postId" element={<Comment />} />
                     </Route>
-                    <Route path='comment' element={<Comment/>}/>
                 </Route>
-
-
 
             </Routes>
             <Footerdown />
