@@ -6,7 +6,7 @@ export const context = createContext();
 
 const Store = () => {
     const [posts, setPosts] = useState([]);
-    const [comment, setComment]=useState([]);
+    const [comment, setComment] = useState([]);
 
     const handleRegister = async (e, form) => {
         e.preventDefault();
@@ -77,6 +77,12 @@ const Store = () => {
 
 
     const GetComment = async () => {
+        const cachedComments = localStorage.getItem('cachedComments');
+        if (cachedComments) {
+            setComment(JSON.parse(cachedComments));
+            return; // use cached data, skip API
+        }
+
         const token = localStorage.getItem('token');
         try {
             const res = await axios.get('https://localhost:7023/api/User/GetComment', {
@@ -84,10 +90,11 @@ const Store = () => {
                     Authorization: `Bearer ${token}`
                 }
             });
-            console.log(res); // Log the full response to see what you're getting
+
             if (res.status === 200) {
                 console.log('Comments:', res.data);
                 setComment(res.data);
+                localStorage.setItem('cachedComments', JSON.stringify(res.data)); // cache for later
             }
         } catch (error) {
             console.log('Error fetching comments:', error.response ? error.response.data : error.message);
@@ -98,13 +105,56 @@ const Store = () => {
             }
         }
     };
-    
+
     useEffect(() => {
         console.log("Fetching comments...");
         GetComment();
     }, []);
+
+    const CreateCommment = async (PostId, content) => {
+const token = localStorage.getItem('token');
+const UserId = localStorage.getItem('userId')
+const Name = localStorage.getItem('name')
+
+
+const CommmentData={
+UserId,
+PostId,
+Name,
+  Content: content,     // ✅ match C# property name
+  Created: new Date().toISOString()  // ✅ match C# property name
+}
+        try {
+
+            const res = await axios.post('https://localhost:7023/api/User/CreateComment',
+                CommmentData,
+                {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    }
+                }
+            );
+            if(res.status ===200)
+            {
+                localStorage.removeItem('cachedComments'); // clear cache if using it
+                await GetComment(); // refresh UI
+            }
+            else
+            {
+                alert('Failed to create comment');
+            }
+
+        } catch (error) {
+            console.error('Error creating comment:', error);
+            alert('An error occurred while creating the comment');
+        }
+
+    }
+
+
     return (
-        <context.Provider value={{ handleRegister, signin, posts, GetPost, comment, GetComment }}>
+        <context.Provider value={{ handleRegister, signin, posts, GetPost, comment, GetComment, CreateCommment}}>
             <App />
         </context.Provider>
     );

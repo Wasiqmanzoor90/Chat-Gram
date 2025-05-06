@@ -35,7 +35,7 @@ function Home() {
               <div>
                 <span
                 style={{cursor:'pointer'}}
-               onClick={()=> navigate('/comment')}
+                onClick={()=> navigate('/comment')}
                 class="material-symbols-outlined">
                   mode_comment
                 </span>

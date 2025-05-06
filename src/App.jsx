@@ -20,7 +20,7 @@ function App() {
                     <Route element={<DashboardLayout />}>
                         <Route path="/home" element={<Home />} />
                     </Route>
-                    <Route path="/comment" element={<Comment />} />
+                    <Route path='comment' element={<Comment/>}/>
                 </Route>
 
 
