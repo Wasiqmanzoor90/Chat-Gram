@@ -6,14 +6,15 @@ namespace Server.Domain.Model
     public class PostDetails
     {
         public ObjectId Id { get; set; }
-        public string? PostPic {  get; set; }
-        public string? PostVideo {  get; set; }
-        public string? Caption {  get; set; }
-        public ObjectId UserId { get; set; }  //Relation with User
-        public List<CommentDetails> Comments { get; set; } = [];
-        public List<string> Tags { get; set; } = [];
+        public string? PostPic { get; set; }
+        public string? PostVideo { get; set; }
+        public string? Caption { get; set; }
+        public ObjectId UserId { get; set; }  // Relation with User
+        public string? Name { get; set; }  // This is the field that will store the user's name
+        public List<CommentDetails> Comments { get; set; } = new List<CommentDetails>();
+        public List<string> Tags { get; set; } = new List<string>();
         public Visibility Visibility { get; set; } = Visibility.Public;
-        public Dictionary<string, int> Reaction { get; set; } = [];
+        public Dictionary<string, int> Reaction { get; set; } = new Dictionary<string, int>();
         public bool IsEdited { get; set; } = false; // Track if the post is edited
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;

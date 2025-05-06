@@ -1,10 +1,8 @@
 ﻿using MediatR;
-using MongoDB.Bson;
 using Server.CQRS.Post.Dtos;
-
+using System.Collections.Generic;
 
 namespace Server.CQRS.Post.Query
 {
-    public record GetPostsIdQuery(ObjectId UserId) : IRequest<List<PostDto>>;
-
+    public class GetPostsIdQuery : IRequest<List<PostDto>> { }
 }

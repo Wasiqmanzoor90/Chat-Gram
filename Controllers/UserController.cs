@@ -1,15 +1,18 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using Server.CQRS.Comment.Commond;
 using Server.CQRS.Comment.Dtos;
+using Server.CQRS.Comment.Query;
 using Server.CQRS.Post.Commond;
 using Server.CQRS.Post.Dtos;
 using Server.CQRS.Post.Query;
 using Server.CQRS.User.Login.Commond;
 using Server.CQRS.User.Register.Commond;
 using Server.CQRS.User.Register.Query;
+using System.Security.Claims;
 
 namespace Server.Controllers
 {
@@ -33,22 +36,48 @@ namespace Server.Controllers
 
 
         [HttpPost("Login")]
-        public async Task<IActionResult> Login(CreateLoginCommond login)
+        public async Task<IActionResult> Login([FromBody] CreateLoginCommond login)
         {
-            var token = await _mediator.Send(login);
-            return Ok(token);
+            // Send the login request to the handler to get the LoginDto response
+            var loginDto = await _mediator.Send(login);
+
+            // Return the LoginDto with the response
+            return Ok(loginDto); // This will include the token, userId, email, and name
         }
 
 
-        [Authorize]
+
+
         [HttpGet("GetPostsByUser")]
-        public async Task<IActionResult> GetPostsByUser([FromQuery] string userId)
+        public async Task<IActionResult> GetAllPosts()
         {
-            var objectId = new ObjectId(userId);
-            var result = await _mediator.Send(new GetPostsIdQuery(objectId));
+            var result = await _mediator.Send(new GetPostsIdQuery());
             return Ok(result);
         }
-        
+
+
+
+        [HttpGet("Verify")]
+        public IActionResult Verify()
+        {
+            var email=User.FindFirst(ClaimTypes.Email)?.Value;
+            return Ok(new
+            {
+                Message = "Token is valid",
+                Email = email
+            });
+        }
+
+
+        [HttpGet("GetComment/{postId}")]
+        public async Task<IActionResult> GetComment(string postId)
+        {
+            var comments = await _mediator.Send(new GetCommentsByPostIdQuery(postId));
+            return Ok(comments);
+        }
+
+
+
 
         [HttpPost("CreatePost")]
         public async Task<IActionResult> CreatePost([FromForm] CreatePostDto dto)
@@ -57,7 +86,7 @@ namespace Server.Controllers
             return Ok(new { PostId = result });
         }
 
-        [Authorize]
+      
         [HttpPost("CreateComment")]
         public async Task<IActionResult> CreateComment([FromBody] CreateCommentDto dto)
         {

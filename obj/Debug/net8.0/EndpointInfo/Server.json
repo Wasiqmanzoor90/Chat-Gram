@@ -72,10 +72,35 @@
         "tags": [
           "User"
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/Verify": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/GetComment/{postId}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
         "parameters": [
           {
-            "name": "userId",
-            "in": "query",
+            "name": "postId",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -220,9 +245,17 @@
             "type": "string",
             "nullable": true
           },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
           "content": {
             "type": "string",
             "nullable": true
+          },
+          "created": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

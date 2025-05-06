@@ -19,7 +19,7 @@ namespace Server.Application.Service
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+              new Claim("userId", user.Id.ToString()),
                 new Claim(ClaimTypes.Email, user.Email)
 
             };

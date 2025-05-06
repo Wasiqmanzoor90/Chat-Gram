@@ -74,18 +74,28 @@
   },
   {
     "ContainingType": "Server.Controllers.UserController",
-    "Method": "GetPostsByUser",
-    "RelativePath": "api/User/GetPostsByUser",
+    "Method": "GetComment",
+    "RelativePath": "api/User/GetComment/{postId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "postId",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.UserController",
+    "Method": "GetAllPosts",
+    "RelativePath": "api/User/GetPostsByUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -118,6 +128,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.UserController",
+    "Method": "Verify",
+    "RelativePath": "api/User/Verify",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

@@ -35,10 +35,11 @@ namespace Server.CQRS.User.Login.Commond
             return new LoginDto
             {
                 Token = token,
-                Id = finduser.Id,
+                Id = finduser.Id.ToString(),
                 Email = finduser.Email,
                 Name = finduser.Name
             };
+
 
         }
     }
