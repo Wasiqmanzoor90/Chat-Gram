@@ -9,6 +9,7 @@ namespace Server.CQRS.User.Login.Dtos
        public string Email { get; set; } = string.Empty;
        public string Password { get; set; } = string.Empty;
        public string Token { get; set; } = string.Empty;  // Add Token property
+        public string Message { get; set; }
 
     }
 }

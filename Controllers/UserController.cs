@@ -1,11 +1,10 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
+using Server.CQRS.Comment.Query;
 using Server.CQRS.Comment.Commond;
 using Server.CQRS.Comment.Dtos;
-using Server.CQRS.Comment.Query;
 using Server.CQRS.Post.Commond;
 using Server.CQRS.Post.Dtos;
 using Server.CQRS.Post.Query;
@@ -60,21 +59,37 @@ namespace Server.Controllers
         [HttpGet("Verify")]
         public IActionResult Verify()
         {
-            var email=User.FindFirst(ClaimTypes.Email)?.Value;
+            var email = User.FindFirst(ClaimTypes.Email)?.Value;
+            var name = User.FindFirst(ClaimTypes.Name)?.Value;
+
             return Ok(new
             {
-                Message = "Token is valid",
-                Email = email
+                message = "Token is valid",
+                email,
+                name
             });
         }
+
 
 
         [HttpGet("GetComment/{postId}")]
         public async Task<IActionResult> GetComment(string postId)
         {
-            var comments = await _mediator.Send(new GetCommentsByPostIdQuery(postId));
-            return Ok(comments);
+            try
+            {
+                var comments = await _mediator.Send(new GetCommentsByPostIdQuery(postId));
+
+                if (comments?.Count == 0)
+                    return NotFound("No comments found for this post.");
+
+                return Ok(comments);
+            }
+            catch
+            {
+                return StatusCode(500, "An error occurred while fetching comments.");
+            }
         }
+
 
 
 

@@ -37,7 +37,9 @@ namespace Server.CQRS.User.Login.Commond
                 Token = token,
                 Id = finduser.Id.ToString(),
                 Email = finduser.Email,
-                Name = finduser.Name
+                Name = finduser.Name,
+                Message="Login suceesfull"
+
             };
 
 
