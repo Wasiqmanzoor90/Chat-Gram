@@ -20,32 +20,41 @@ namespace Server.Controllers
     public class UserController : ControllerBase
     {
         private readonly IMediator _mediator;
-        public UserController(IMediator mediator)
+        private readonly ILogger<UserController> _logger; // Added logger for debugging
+
+        public UserController(IMediator mediator, ILogger<UserController> logger)
         {
-           _mediator = mediator;
+            _mediator = mediator;
+            _logger = logger;
         }
 
-
         [HttpPost("Register")]
-        public async Task <IActionResult> Register([FromBody] CreateUserCommond commond)
+        public async Task<IActionResult> Register([FromBody] CreateUserCommond commond)
         {
             var userid = await _mediator.Send(commond);
             return Ok(new { UserId = userid, Message = "User Created Sucessfully!" });
         }
 
-
         [HttpPost("Login")]
         public async Task<IActionResult> Login([FromBody] CreateLoginCommond login)
         {
-            // Send the login request to the handler to get the LoginDto response
+            // Send the login request to the handler
             var loginDto = await _mediator.Send(login);
 
-            // Return the LoginDto with the response
-            return Ok(loginDto); // This will include the token, userId, email, and name
+            _logger.LogInformation("Logging in user with email: {Email}", login.Email);
+
+            // Set the JWT token as a cookie
+            Response.Cookies.Append("token", loginDto.Token, new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = HttpContext.Request.IsHttps, // Automatically set based on connection
+                SameSite = SameSiteMode.Lax, // Changed from None to Lax for better compatibility
+                Expires = DateTime.UtcNow.AddDays(1)
+            });
+
+            // Return success response
+            return Ok(loginDto);
         }
-
-
-
 
         [HttpGet("GetPostsByUser")]
         public async Task<IActionResult> GetAllPosts()
@@ -54,22 +63,27 @@ namespace Server.Controllers
             return Ok(result);
         }
 
-
-
+        [Authorize]
         [HttpGet("Verify")]
         public IActionResult Verify()
         {
+           
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
             var name = User.FindFirst(ClaimTypes.Name)?.Value;
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+       
 
-            return Ok(new
-            {
-                message = "Token is valid",
-                email,
-                name
-            });
+            return Ok(new { message = "Token is valid", email, name, userId });
         }
 
+
+        [Authorize]
+        [HttpPost("LikeBy/{postId}")]
+        public async Task<IActionResult> ToggleLike(string postId, [FromBody] string userId)
+        {
+            var result = await _mediator.Send(new CreateLikeCommand(postId, userId));
+            return result ? Ok("Like toggled successfully.") : NotFound("Post or user not found.");
+        }
 
 
         [HttpGet("GetComment/{postId}")]
@@ -84,15 +98,12 @@ namespace Server.Controllers
 
                 return Ok(comments);
             }
-            catch
+            catch (Exception ex)
             {
+                _logger.LogError(ex, "Error fetching comments for post {PostId}", postId);
                 return StatusCode(500, "An error occurred while fetching comments.");
             }
         }
-
-
-
-
 
         [HttpPost("CreatePost")]
         public async Task<IActionResult> CreatePost([FromForm] CreatePostDto dto)
@@ -101,7 +112,6 @@ namespace Server.Controllers
             return Ok(new { PostId = result });
         }
 
-      
         [HttpPost("CreateComment")]
         public async Task<IActionResult> CreateComment([FromBody] CreateCommentDto dto)
         {
@@ -114,7 +124,7 @@ namespace Server.Controllers
         public async Task<IActionResult> Detail([FromQuery] string userId)
         {
             if (!ObjectId.TryParse(userId, out ObjectId objectId))
-            return BadRequest("Invalid user ID format.");
+                return BadRequest("Invalid user ID format.");
             var result = await _mediator.Send(new GetUserByIdQuery(objectId));
             return Ok(result);
         }

@@ -7,80 +7,48 @@
       "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\user\\login\\commond\\createlogincommondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\user\\login\\commond\\createlogincommondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\post\\commond\\createlikecommondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\post\\commond\\createlikecommondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\user\\login\\commond\\createloginvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\user\\login\\commond\\createloginvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\post\\commond\\createlikecommond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\post\\commond\\createlikecommond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\user\\login\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\user\\login\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\post\\commond\\createpostcommond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\post\\commond\\createpostcommond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\post\\commond\\createpostcommondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\post\\commond\\createpostcommondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\application\\service\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:application\\service\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\application\\interface\\ijtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:application\\interface\\ijtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\application\\service\\jwtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:application\\service\\jwtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\comment\\query\\getcommentbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\comment\\query\\getcommentbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\comment\\commond\\createcommetcommondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\comment\\commond\\createcommetcommondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\comment\\query\\getcommentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\comment\\query\\getcommentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\post\\query\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\post\\query\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\application\\service\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:application\\service\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\comment\\commond\\createcommentcommond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\comment\\commond\\createcommentcommond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\comment\\dtos\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\comment\\dtos\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\comment\\query\\getcommentvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\comment\\query\\getcommentvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\post\\query\\getpostbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\post\\query\\getpostbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\domain\\model\\postdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:domain\\model\\postdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\post\\dtos\\createpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\post\\dtos\\createpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\data\\mongodbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:data\\mongodbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\post\\dtos\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\post\\dtos\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|c:\\users\\admin\\source\\repos\\dotnet projects\\instagram clone\\server\\cqrs\\post\\commond\\createpostcommond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B7A8DE-30F0-431D-8C1D-A290BD4C097C}|Server.csproj|solutionrelative:cqrs\\post\\commond\\createpostcommond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,8 +58,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PostDetails.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Domain\\Model\\PostDetails.cs",
+              "RelativeDocumentMoniker": "Domain\\Model\\PostDetails.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Domain\\Model\\PostDetails.cs",
+              "RelativeToolTip": "Domain\\Model\\PostDetails.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T11:47:44.717Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
@@ -102,15 +84,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateLoginValidation.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\User\\Login\\Commond\\CreateLoginValidation.cs",
-              "RelativeDocumentMoniker": "CQRS\\User\\Login\\Commond\\CreateLoginValidation.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\User\\Login\\Commond\\CreateLoginValidation.cs",
-              "RelativeToolTip": "CQRS\\User\\Login\\Commond\\CreateLoginValidation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CreateLikeCommondHandler.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Commond\\CreateLikeCommondHandler.cs",
+              "RelativeDocumentMoniker": "CQRS\\Post\\Commond\\CreateLikeCommondHandler.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Commond\\CreateLikeCommondHandler.cs",
+              "RelativeToolTip": "CQRS\\Post\\Commond\\CreateLikeCommondHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:08:05.617Z",
+              "WhenOpened": "2025-05-19T11:07:04.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateLikeCommond.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Commond\\CreateLikeCommond.cs",
+              "RelativeDocumentMoniker": "CQRS\\Post\\Commond\\CreateLikeCommond.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Commond\\CreateLikeCommond.cs",
+              "RelativeToolTip": "CQRS\\Post\\Commond\\CreateLikeCommond.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T11:11:13.005Z",
               "EditorCaption": ""
             },
             {
@@ -121,222 +116,14 @@
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Controllers\\UserController.cs*",
               "RelativeToolTip": "Controllers\\UserController.cs*",
-              "ViewState": "AgIAADcAAAAAAAAAAAAkwEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAE8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:03:20.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateLoginCommondHandler.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\User\\Login\\Commond\\CreateLoginCommondHandler.cs",
-              "RelativeDocumentMoniker": "CQRS\\User\\Login\\Commond\\CreateLoginCommondHandler.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\User\\Login\\Commond\\CreateLoginCommondHandler.cs",
-              "RelativeToolTip": "CQRS\\User\\Login\\Commond\\CreateLoginCommondHandler.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T12:35:18.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "JwtConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\JwtConfiguration.cs",
-              "RelativeDocumentMoniker": "Application\\Service\\JwtConfiguration.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\JwtConfiguration.cs",
-              "RelativeToolTip": "Application\\Service\\JwtConfiguration.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T12:33:56.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\TokenService.cs",
-              "RelativeDocumentMoniker": "Application\\Service\\TokenService.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\TokenService.cs",
-              "RelativeToolTip": "Application\\Service\\TokenService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T12:33:59.151Z",
+              "WhenOpened": "2025-05-19T11:23:30.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\User\\Login\\Dtos\\LoginDto.cs",
-              "RelativeDocumentMoniker": "CQRS\\User\\Login\\Dtos\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\User\\Login\\Dtos\\LoginDto.cs",
-              "RelativeToolTip": "CQRS\\User\\Login\\Dtos\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T12:41:38.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetCommentByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Query\\GetCommentByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "CQRS\\Comment\\Query\\GetCommentByIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Query\\GetCommentByIdQueryHandler.cs",
-              "RelativeToolTip": "CQRS\\Comment\\Query\\GetCommentByIdQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:17:10.397Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetCommentByIdQuery.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Query\\GetCommentByIdQuery.cs",
-              "RelativeDocumentMoniker": "CQRS\\Comment\\Query\\GetCommentByIdQuery.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Query\\GetCommentByIdQuery.cs",
-              "RelativeToolTip": "CQRS\\Comment\\Query\\GetCommentByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:15:09.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateCommetCommondHandler.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Commond\\CreateCommetCommondHandler.cs",
-              "RelativeDocumentMoniker": "CQRS\\Comment\\Commond\\CreateCommetCommondHandler.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Commond\\CreateCommetCommondHandler.cs",
-              "RelativeToolTip": "CQRS\\Comment\\Commond\\CreateCommetCommondHandler.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAADMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T12:05:17.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetUserByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Query\\GetUserByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "CQRS\\Post\\Query\\GetUserByIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Query\\GetUserByIdQueryHandler.cs",
-              "RelativeToolTip": "CQRS\\Post\\Query\\GetUserByIdQueryHandler.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAABYAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:16:36.107Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CloudinaryService.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\CloudinaryService.cs",
-              "RelativeDocumentMoniker": "Application\\Service\\CloudinaryService.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\CloudinaryService.cs",
-              "RelativeToolTip": "Application\\Service\\CloudinaryService.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T12:33:48.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateCommentCommond.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Commond\\CreateCommentCommond.cs",
-              "RelativeDocumentMoniker": "CQRS\\Comment\\Commond\\CreateCommentCommond.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Commond\\CreateCommentCommond.cs",
-              "RelativeToolTip": "CQRS\\Comment\\Commond\\CreateCommentCommond.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T12:05:16.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CreateCommentDto.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Dtos\\CreateCommentDto.cs",
-              "RelativeDocumentMoniker": "CQRS\\Comment\\Dtos\\CreateCommentDto.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Dtos\\CreateCommentDto.cs",
-              "RelativeToolTip": "CQRS\\Comment\\Dtos\\CreateCommentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:15:04.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GetCommentValidation.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Query\\GetCommentValidation.cs",
-              "RelativeDocumentMoniker": "CQRS\\Comment\\Query\\GetCommentValidation.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Comment\\Query\\GetCommentValidation.cs",
-              "RelativeToolTip": "CQRS\\Comment\\Query\\GetCommentValidation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:31:04.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GetPostByIdQuery.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Query\\GetPostByIdQuery.cs",
-              "RelativeDocumentMoniker": "CQRS\\Post\\Query\\GetPostByIdQuery.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Query\\GetPostByIdQuery.cs",
-              "RelativeToolTip": "CQRS\\Post\\Query\\GetPostByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:14:38.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PostDetails.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Domain\\Model\\PostDetails.cs",
-              "RelativeDocumentMoniker": "Domain\\Model\\PostDetails.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Domain\\Model\\PostDetails.cs",
-              "RelativeToolTip": "Domain\\Model\\PostDetails.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA4wBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:24:49.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CreatePostDto.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Dtos\\CreatePostDto.cs",
-              "RelativeDocumentMoniker": "CQRS\\Post\\Dtos\\CreatePostDto.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Dtos\\CreatePostDto.cs",
-              "RelativeToolTip": "CQRS\\Post\\Dtos\\CreatePostDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:22:36.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MongoDbService.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Data\\MongoDbService.cs",
-              "RelativeDocumentMoniker": "Data\\MongoDbService.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Data\\MongoDbService.cs",
-              "RelativeToolTip": "Data\\MongoDbService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABrAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:23:14.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PostDto.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Dtos\\PostDto.cs",
-              "RelativeDocumentMoniker": "CQRS\\Post\\Dtos\\PostDto.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Dtos\\PostDto.cs",
-              "RelativeToolTip": "CQRS\\Post\\Dtos\\PostDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:22:39.152Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "CreatePostCommond.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Commond\\CreatePostCommond.cs",
               "RelativeDocumentMoniker": "CQRS\\Post\\Commond\\CreatePostCommond.cs",
@@ -344,7 +131,99 @@
               "RelativeToolTip": "CQRS\\Post\\Commond\\CreatePostCommond.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:14:34.641Z"
+              "WhenOpened": "2025-05-19T11:47:32.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreatePostCommondHandler.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Commond\\CreatePostCommondHandler.cs",
+              "RelativeDocumentMoniker": "CQRS\\Post\\Commond\\CreatePostCommondHandler.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\CQRS\\Post\\Commond\\CreatePostCommondHandler.cs",
+              "RelativeToolTip": "CQRS\\Post\\Commond\\CreatePostCommondHandler.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAuwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T11:11:09.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\TokenService.cs",
+              "RelativeDocumentMoniker": "Application\\Service\\TokenService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\TokenService.cs",
+              "RelativeToolTip": "Application\\Service\\TokenService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T12:21:56.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T11:47:52.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CloudinaryService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\CloudinaryService.cs",
+              "RelativeDocumentMoniker": "Application\\Service\\CloudinaryService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\CloudinaryService.cs",
+              "RelativeToolTip": "Application\\Service\\CloudinaryService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T12:21:32.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JwtConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\JwtConfiguration.cs",
+              "RelativeDocumentMoniker": "Application\\Service\\JwtConfiguration.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Service\\JwtConfiguration.cs",
+              "RelativeToolTip": "Application\\Service\\JwtConfiguration.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAuwFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T12:21:38.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IJToken.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Interface\\IJToken.cs",
+              "RelativeDocumentMoniker": "Application\\Interface\\IJToken.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Application\\Interface\\IJToken.cs",
+              "RelativeToolTip": "Application\\Interface\\IJToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T12:26:08.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MongoDbService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Data\\MongoDbService.cs",
+              "RelativeDocumentMoniker": "Data\\MongoDbService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Dotnet projects\\Instagram Clone\\Server\\Data\\MongoDbService.cs",
+              "RelativeToolTip": "Data\\MongoDbService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T11:10:05.286Z",
+              "EditorCaption": ""
             }
           ]
         }

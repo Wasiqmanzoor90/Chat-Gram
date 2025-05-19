@@ -1,8 +1,10 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using Server.Types;
 
 namespace Server.Domain.Model
 {
+    [BsonIgnoreExtraElements]
     public class PostDetails
     {
         public ObjectId Id { get; set; }
@@ -14,7 +16,8 @@ namespace Server.Domain.Model
         public List<CommentDetails> Comments { get; set; } = new List<CommentDetails>();
         public List<string> Tags { get; set; } = new List<string>();
         public Visibility Visibility { get; set; } = Visibility.Public;
-        public Dictionary<string, int> Reaction { get; set; } = new Dictionary<string, int>();
+        public HashSet<string> LikedBy { get; set; } = new HashSet<string>(); // List of User IDs who liked
+
         public bool IsEdited { get; set; } = false; // Track if the post is edited
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;

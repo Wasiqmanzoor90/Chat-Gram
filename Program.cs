@@ -1,5 +1,5 @@
+﻿using FluentValidation.AspNetCore;
 using FluentValidation;
-using FluentValidation.AspNetCore;
 using Server.Application.Interface;
 using Server.Application.Service;
 using Server.Data;
@@ -8,7 +8,6 @@ using System.Reflection;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 builder.Services.AddFluentValidationAutoValidation(); // Auto model validation
 builder.Services.AddEndpointsApiExplorer();
@@ -17,7 +16,8 @@ builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 builder.Services.AddSingleton<MongoDbService>();
 builder.Services.AddScoped<ICloudinaryInterface, CloudinaryService>();
 builder.Services.AddScoped<IJToken, TokenService>();
-//Call JWT here
+
+// Call JWT authentication
 builder.Services.AddJwtAuthentication(builder.Configuration);
 
 // Register MediatR (v12+ syntax)
@@ -26,18 +26,20 @@ builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
 });
 
-
-builder.Services.AddCors(Options =>
+// Add CORS policy for React frontend
+builder.Services.AddCors(options =>
 {
-    Options.AddPolicy("AllowAll", policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173") // ✅ React app URL
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials(); // ✅ Important!
+    });
 });
 
 
 var app = builder.Build();
-
-
-
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -47,7 +49,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseCors("AllowAll");
+
+// Add CORS before authentication and authorization
+app.UseCors("AllowFrontend");
+
 app.UseAuthentication();
 app.UseAuthorization();
 

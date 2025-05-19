@@ -18,11 +18,14 @@ namespace Server.Application.Service
         {
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-              new Claim("userId", user.Id.ToString()),
-                new Claim(ClaimTypes.Email, user.Email)
+    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()), // unique token ID
+    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()), // ✅ set real user ID
+    new Claim(ClaimTypes.Email, user.Email),
+    new Claim(ClaimTypes.Name, user.Name)
+};
 
-            };
+
+
             var secretKey = _configuration["JWT:SecretKey"];
             if (string.IsNullOrWhiteSpace(secretKey))
                 throw new Exception("JWT SecretKey is missing from configuration.");
@@ -31,12 +34,13 @@ namespace Server.Application.Service
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer: "InstagramClone", // Optional: hardcoded or add to config if needed
-                audience: "InstagramCloneUser",
-                claims: claims,
-                expires: DateTime.UtcNow.AddHours(2),
-                signingCredentials: creds
-            );
+        issuer: "InstagramClone",
+        audience: "InstagramCloneUser",
+        claims: claims,
+        expires: DateTime.UtcNow.AddDays(1),
+        signingCredentials: creds
+    );
+
 
             return new JwtSecurityTokenHandler().WriteToken(token);
 
